@@ -1,3 +1,3 @@
-Sam: Research flask, find out if it's the right tool for the job.  If you have extra time, try to get some basic Spotify API calls working in Python.
+Sam: Start learning Flask.  Goal is to make an API call to Spotify by next meeting
 
-Dylan: Mock up a couple different potential website designs.  Work on React tutorial, and if time allows, start researching React Native.
+Dylan: Finish React tutorial.
