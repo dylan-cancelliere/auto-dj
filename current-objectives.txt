@@ -1,3 +1,7 @@
 Sam: Get through chapter 3 in Flask tutorial
 
 Dylan: Create a few more mockups in PS, further familiarize with React in preparation for BrickHack
+
+Justin: Finish at least the first two modules in SoloLearn JS tutorial
+
+Joe: Finish at least the first three chapters in Flask tutorial
