@@ -8,3 +8,8 @@
 -Decided on using Flask for backend.  Created mockup for a possible design idea
 for frontend.  Will likely be changed, but is a good plan to work towrads to
 to be able to start writing code
+
+
+2/3/20
+
+-Worked on learning Flask and React
