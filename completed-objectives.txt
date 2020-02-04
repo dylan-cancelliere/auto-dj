@@ -6,7 +6,7 @@
 1/26/20
 
 -Decided on using Flask for backend.  Created mockup for a possible design idea
-for frontend.  Will likely be changed, but is a good plan to work towrads to
+for frontend.  Will likely be changed, but is a good plan to work towards to
 to be able to start writing code
 
 
