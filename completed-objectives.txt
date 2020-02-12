@@ -13,3 +13,8 @@ to be able to start writing code
 2/3/20
 
 -Worked on learning Flask and React
+
+
+2/11/20
+
+-Justin learned JS, Dylan created the front page for the website in react, Sam and Joe decided on switching the backend to Node

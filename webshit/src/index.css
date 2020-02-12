@@ -1,9 +1,10 @@
 body{
     background-color: #114b5f;
+    color: #00ffd5;
 }
 
 #title{
-    color: #baa5ff;
+    color: #00ffd5;
     font-family: sans-serif;
     padding-left: 30px;
     font-size: 30px;
@@ -12,7 +13,7 @@ body{
 
 #toptext{
     font-size: 30px;
-    color: #0f9c85;
+    color: #00ffd5;
     font-family: sans-serif;
     text-align: center;
     position: relative;
@@ -21,9 +22,15 @@ body{
 
 #bottomtext{
     font-size: 30px;
-    color: #0f9c85;
+    color: #00ffd5;
     font-family: sans-serif;
     text-align: center;
     position: relative;
     top: 250px;
+}
+
+
+h2{
+    color: white;
+    text-decoration: none;
 }
