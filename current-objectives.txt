@@ -1,7 +1,7 @@
-Sam: Get through chapter 3 in Flask tutorial
+Sam: Complete JS course on YouTube
 
-Dylan: Create a few more mockups in PS, further familiarize with React in preparation for BrickHack
+Dylan: Make a sliding menu and implement routers for the nav menu
 
-Justin: Finish at least the first two modules in SoloLearn JS tutorial
+Justin: Finish the JS course and start creating components
 
-Joe: Finish at least the first three chapters in Flask tutorial
+Joe: Get a basis for the project to work on and learn the methods and capabilities of node
