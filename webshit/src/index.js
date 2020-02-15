@@ -6,8 +6,8 @@ import CreateRoomContainer from "./CreateRoomContainer";
 
 ReactDOM.render(
     <div>
-        <SearchBarContainer/>
-        <CreateRoomContainer/>
+        <Main/>,
+        document.
     </div>,
-    document.querySelector("#container")
+    document.querySelector("#root")
 );
