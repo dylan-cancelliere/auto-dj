@@ -1,5 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .navigationbar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #3A5472;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .navigationbar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #00ffd5;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .navigationbar a:hover {
+            color: aquamarine;
+        }
+
+        .navigationbar .closebutton {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .navigationbar {padding-top: 15px;}
+            .navigationbar a {font-size: 18px;}
+        }
+    </style>
+</head>
+<body>
+
 <div id="coolNavBar" class="navigationbar">
     <a href="javascript:void (0)" class="closebutton" onclick="closeNavigation()">&times;</a>
     <a href="#">Search</a>
@@ -8,6 +56,17 @@
     <a href="#">Favorites</a>
 </div>
 
-<! opens the navigation bar>
-<span onclick="openNavigation ()">OpenNavBar</span>
+<span style="font-size:30px;cursor:pointer" onclick="openNavigation()">&#9776; </span>
 
+<script>
+    function openNavigation() {
+        document.getElementById("coolNavBar").style.width = "250px";
+    }
+
+    function closeNavigation() {
+        document.getElementById("coolNavBar").style.width = "0";
+    }
+</script>
+
+</body>
+</html>
