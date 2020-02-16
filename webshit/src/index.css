@@ -1,0 +1,36 @@
+body{
+    background-color: #114b5f;
+    color: #00ffd5;
+}
+
+#title{
+    color: #00ffd5;
+    font-family: sans-serif;
+    padding-left: 30px;
+    font-size: 30px;
+    position: relative;
+}
+
+#toptext{
+    font-size: 30px;
+    color: #00ffd5;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+#bottomtext{
+    font-size: 30px;
+    color: #00ffd5;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    top: 250px;
+}
+
+
+h2{
+    color: white;
+    text-decoration: none;
+}
