@@ -4,8 +4,8 @@ import {
     NavLink,
     HashRouter
 } from "react-router-dom";
-import Home from "./Home";
-import Lobby from "./Lobby";
+import Home from "./Home/Home";
+import Lobby from "./Lobby/Lobby";
 import "./Main.css"
 
 class Main extends Component{
@@ -24,6 +24,22 @@ class Main extends Component{
                     </div>
                 </div>
             </HashRouter>
+        );
+    }
+}
+
+class Navbar extends Component{
+    render(){
+        return(
+          null
+        );
+    }
+}
+
+class NavbarContainer extends Component{
+    render(){
+        return(
+            null
         );
     }
 }
