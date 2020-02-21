@@ -1,17 +1,20 @@
-#toptext{
-    font-size: 30px;
+.top-text{
+    font-size: calc(.5em + 1.5vw);
     color: #00ffd5;
     font-family: sans-serif;
     text-align: center;
-    position: relative;
-    top: 20%;
 }
 
-#bottomtext{
-    font-size: 30px;
+.bottom-text{
+    font-size: calc(.5em + 1.5vw);
     color: #00ffd5;
     font-family: sans-serif;
     text-align: center;
-    position: relative;
-    top: 250px;
+}
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33%;
 }

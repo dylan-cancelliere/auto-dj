@@ -12,8 +12,7 @@ class Main extends Component{
     render(){
         return(
             <HashRouter>
-                <div>
-                    <div id="title"><h1>AutoDJ</h1></div>
+                <div className="container">
                     <ul className="header">
                         <li><NavLink exact to="/">Home</NavLink></li>
                         <li><NavLink to="/lobby">Lobby</NavLink></li>
@@ -24,22 +23,6 @@ class Main extends Component{
                     </div>
                 </div>
             </HashRouter>
-        );
-    }
-}
-
-class Navbar extends Component{
-    render(){
-        return(
-          null
-        );
-    }
-}
-
-class NavbarContainer extends Component{
-    render(){
-        return(
-            null
         );
     }
 }
