@@ -3,13 +3,10 @@ button{
     background-color: #1a1a1a;
     border: none;
     border-radius: 10px;
-    position: absolute;
-    width: 34%;
+    width: 100%;
     padding: 10px;
     height: 100px;
-    top: 80%; left: 50%;
-    transform: translate(-50%, -80%);
-    font-size: 32px;
+    font-size: calc(1em + 1.5vw);
     filter: drop-shadow(0 0 3rem #292929);
     font-family: sans-serif;
 }

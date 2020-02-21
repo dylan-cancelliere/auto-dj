@@ -14,9 +14,6 @@ class MenuButton extends Component{
             <button id="roundButton" onMouseDown={this.props.handleMouseDown}/>
         );
     }
-    componentWillMount() {
-        <MenuContainer/>
-    }
 }
 
 export default MenuButton;

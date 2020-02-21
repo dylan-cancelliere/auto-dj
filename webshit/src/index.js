@@ -1,13 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom"
 import "./index.css";
-import SearchBarContainer from "./SearchBarContainer";
-import CreateRoomContainer from "./CreateRoomContainer";
+import Main from "./Main";
 
 ReactDOM.render(
-    <div>
-        <SearchBarContainer/>
-        <CreateRoomContainer/>
-    </div>,
-    document.querySelector("#container")
+    <Main/>,
+    document.querySelector("#root")
 );
