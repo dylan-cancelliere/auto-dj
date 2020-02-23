@@ -1,0 +1,16 @@
+input{
+    color: #1a1a1a;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: absolute;
+    width: 33%;
+    padding: 10px;
+    height: 70px;
+    display: flex;
+    top: 40%; left: 50%;
+    transform: translate(-50%, -40%);
+    font-size: 32px;
+    border: none;
+    filter: drop-shadow(0 0 3rem #292929);
+}

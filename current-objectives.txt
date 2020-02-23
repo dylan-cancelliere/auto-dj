@@ -1,0 +1,7 @@
+Sam: Complete JS course on YouTube
+
+Dylan: Make a sliding menu and implement routers for the nav menu
+
+Justin: Finish the JS course and start creating components
+
+Joe: Get a basis for the project to work on and learn the methods and capabilities of node

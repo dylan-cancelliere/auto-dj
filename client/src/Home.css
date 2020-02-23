@@ -1,0 +1,17 @@
+#toptext{
+    font-size: 30px;
+    color: #00ffd5;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    top: 20%;
+}
+
+#bottomtext{
+    font-size: 30px;
+    color: #00ffd5;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    top: 250px;
+}
