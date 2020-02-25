@@ -1,20 +1,24 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Room from './components/rooms/rooms';
+import React, {Component} from "react";
+import "./App.css"
+import Navbar from "./Navbar";
+import {HashRouter as Router, Route} from "react-router-dom";
+import Home from "./Home/Home";
+import Lobby from "./Lobby/Lobby";
 
-class App extends Component {
-  render() {
-    return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Room />
-      </header>
-    </div>
-  );
+class Main extends Component{
+    render(){
+        return(
+            <div className="container">
+                <Router>
+                    <Navbar/>
+                    <div className="content">
+                        <Route exact path="/" component={Home}/>
+                        <Route path="/lobby" component={Lobby}/>
+                    </div>
+                </Router>
+            </div>
+        );
+    }
 }
-  }
-  
 
-export default App;
+export default Main;

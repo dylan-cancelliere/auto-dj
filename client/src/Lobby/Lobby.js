@@ -1,11 +1,15 @@
 import React, {Component} from "react";
 import "./Lobby.css";
+import Room from '../components/rooms/rooms';
 
 class Lobby extends Component{
     render(){
         return(
-                <div><h2>Room Code: 123456</h2></div>
-        )
+                <div>
+		<Room />
+		</div>
+		
+	)
     }
 }
 
