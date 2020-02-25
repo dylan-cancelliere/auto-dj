@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import "./Lobby.css";
-import Room from '../components/rooms/rooms';
+import Room from '../components/Rooms/Rooms';
 
 class Lobby extends Component{
     render(){
@@ -8,7 +8,7 @@ class Lobby extends Component{
                 <div>
 		<Room />
 		</div>
-		
+
 	)
     }
 }

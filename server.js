@@ -17,7 +17,7 @@ function query_room(room_no) {
 }
 
 
-app.get('/api/rooms', (req, res) => {
+app.get('/api/Rooms', (req, res) => {
     const room = [
         { members: ["Joe", "Dylan"], room_code: 123456, queue: ["No Snitchin'", "12 bricks"]},
         // { members: ["Sam", "Justin"], room_code: 654321, queue: ["The Box", "Ric Flair Drip"]

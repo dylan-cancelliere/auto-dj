@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './rooms.css';
+import './Rooms.css';
 
 function list_queue(room) {
   let q = [];
@@ -26,7 +26,7 @@ class Room extends Component {
   }
 
   componentDidMount() {
-    fetch('/api/rooms')
+    fetch('/api/Rooms')
     .then(res => res.json())
     .then(rooms => this.setState({rooms}, console.log("Loaded Active Rooms ", rooms)))
   }
@@ -55,6 +55,6 @@ class Room extends Component {
     );
   }
 }
-  
+
 
 export default Room;
