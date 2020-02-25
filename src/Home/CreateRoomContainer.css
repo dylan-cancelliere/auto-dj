@@ -5,7 +5,7 @@ button{
     border-radius: 10px;
     width: 100%;
     padding: 10px;
-    height: 100px;
+    height: 2.5em;
     font-size: calc(1em + 1.5vw);
     filter: drop-shadow(0 0 3rem #292929);
     font-family: sans-serif;
