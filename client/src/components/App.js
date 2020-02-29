@@ -2,8 +2,8 @@ import React, {Component} from "react";
 import "./App.css"
 import Navbar from "./Navbar";
 import {HashRouter as Router, Route} from "react-router-dom";
-import Home from "./components/Home/Home";
-import Lobby from "./components/Lobby/Lobby";
+import Home from "./Home/Home";
+import Lobby from "./Lobby/Lobby";
 
 class Main extends Component{
     render(){

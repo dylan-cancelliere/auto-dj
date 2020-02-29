@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import "./Lobby.css";
-import Room from '../components/Rooms/Rooms';
+import Room from '../Rooms/Rooms';
 
 class Lobby extends Component{
     render(){
