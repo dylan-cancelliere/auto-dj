@@ -1,5 +1,5 @@
 {
-  "name": "webshit",
+  "name": "auto-dj",
   "version": "0.1.0",
   "description": "Backend for AutoDJ using express and mongodb",
   "main": "server.js",
@@ -24,14 +24,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/samharrell24/auto-dj-backend.git"
+    "url": "git+https://github.com/dylan-cancelliere/auto-dj.git"
   },
-  "author": "Joseph Vita, Samuel Harrell",
+  "author": "Dylan Cancelliere, Joseph Vita",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/samharrell24/auto-dj-backend/issues"
+    "url": "https://github.com/dylan-cancelliere/auto-dj/issues"
   },
-  "homepage": "https://github.com/samharrell24/auto-dj-backend#readme",
+  "homepage": "https://github.com/dylan-cancelliere/auto-dj#readme",
   "devDependencies": {
     "mongodb": "^3.5.3",
     "nodemon": "^2.0.2",
