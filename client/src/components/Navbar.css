@@ -58,9 +58,23 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Individual item */
 .bm-item {
     display: inline-block;
+
 }
 
 /* Styling of overlay */
 .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
+}
+
+ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #00ffd5;
 }

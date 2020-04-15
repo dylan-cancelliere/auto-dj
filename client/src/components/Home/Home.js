@@ -1,6 +1,7 @@
 
 import SearchBarContainer from "./SearchBarContainer";
 import CreateRoomContainer from "./CreateRoomContainer";
+import LoginButton from "./LoginButton";
 import React, {Component} from "react";
 import "./Home.css";
 
@@ -16,6 +17,7 @@ class Home extends Component{
                     <h1>or</h1>
                 </div>
                 <CreateRoomContainer/>
+                <LoginButton/>
             </div>
         );
     }
