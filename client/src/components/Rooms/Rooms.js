@@ -28,7 +28,7 @@ class Room extends Component {
   componentDidMount() {
     fetch('/api/Rooms')
     .then(res => res.json())
-    .then(rooms => this.setState({rooms}, console.log("Loaded Active Rooms ", rooms)))
+    .then(rooms => this.setState({rooms}, () => console.log("Loaded Active Rooms ", rooms)))
   }
 
 

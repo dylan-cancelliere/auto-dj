@@ -10,7 +10,7 @@ let client_id = '07da490b78784cab8be4aa1815137b12'; // Your client id
 let client_secret = 'fb522c9e6e2444b49c3e6e2eba525258'; // Your secret
 let redirect_uri = 'http://localhost:5000/callback'; // Your redirect uri
 
-const ADDRESS = "http://localhost:3000/#/"
+const ADDRESS = "http://localhost:3000/#/lobby?"
 
 let generateRandomString = function(length) {
     let text = '';
@@ -25,12 +25,29 @@ let generateRandomString = function(length) {
 let stateKey = 'spotify_auth_state';
 app.use(express.static(__dirname + '/public')).use(cors()).use(cookieParser());
 
-app.get('/search', function(req, res) {
+app.get('/search/song/:song/auth/:auth', function(req, res) {
+    let access_token = req.params['auth'];
+    console.log(access_token);
 
+    let options = {
+        url: 'https://api.spotify.com/v1/search?' +
+        querystring.stringify({
+            q: req.params['song']
+        }) + "&type=track",
+        headers: { 'Authorization': 'Bearer ' + access_token },
+        json: true
+    };
+
+    console.log(options['url']);
+
+    request.get(options, function(error, response, body) {
+        res.json(body);
+        console.log(body);
+        //res.redirect(ADDRESS);
+    });
 })
 
 app.get('/login', function(req,res){
-    console.log(req);
     let state = generateRandomString(16);
     res.cookie(stateKey, state);
 
@@ -48,8 +65,7 @@ app.get('/login', function(req,res){
 
 app.get('/callback', function(req, res) {
 
-    // your application requests refresh and access tokens
-    // after checking the state parameter
+    // Requests refresh and access tokens after checking the state parameter
 
     let code = req.query.code || null;
     let state = req.query.state || null;
@@ -89,7 +105,7 @@ app.get('/callback', function(req, res) {
 
                 // use the access token to access the Spotify Web API
                 request.get(options, function(error, response, body) {
-                    console.log(body);
+                    //console.log(body);
                 });
 
                 // we can also pass the token to the browser to make requests from there
