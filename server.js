@@ -25,12 +25,17 @@ let generateRandomString = function(length) {
 let stateKey = 'spotify_auth_state';
 app.use(express.static(__dirname + '/public')).use(cors()).use(cookieParser());
 
+app.get('/search', function(req, res) {
+
+})
+
 app.get('/login', function(req,res){
+    console.log(req);
     let state = generateRandomString(16);
     res.cookie(stateKey, state);
 
     //Request auth
-    let scope = 'user-read-private user-read-email streaming';
+    let scope = 'user-read-private user-read-email streaming user-read-playback-state user-modify-playback-state user-library-read user-library-modify';
     res.redirect('https://accounts.spotify.com/authorize?' +
         querystring.stringify({
             response_type: 'code',

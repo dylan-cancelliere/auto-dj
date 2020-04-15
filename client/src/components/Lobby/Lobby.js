@@ -6,8 +6,7 @@ import WebPlayer from "./WebPlayer";
 class Lobby extends Component {
     render() {
         return (
-            <div>
-                <Room/>
+            <div className="web-player-container">
                 <WebPlayer/>
             </div>
 

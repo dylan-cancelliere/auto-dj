@@ -1,0 +1,9 @@
+.web-player-container{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+.web-player{
+    width: 100%;
+}
