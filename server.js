@@ -10,6 +10,8 @@ let client_id = '07da490b78784cab8be4aa1815137b12'; // Your client id
 let client_secret = 'fb522c9e6e2444b49c3e6e2eba525258'; // Your secret
 let redirect_uri = 'http://localhost:5000/callback'; // Your redirect uri
 
+const ADDRESS = "http://localhost:3000/#/"
+
 let generateRandomString = function(length) {
     let text = '';
     let possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -49,7 +51,7 @@ app.get('/callback', function(req, res) {
     let storedState = req.cookies ? req.cookies[stateKey] : null;
 
     if (state === null || state !== storedState) {
-        res.redirect('localhost:3000/' +
+        res.redirect(ADDRESS +
             querystring.stringify({
                 error: 'state_mismatch'
             }));
@@ -86,13 +88,13 @@ app.get('/callback', function(req, res) {
                 });
 
                 // we can also pass the token to the browser to make requests from there
-                res.redirect('localhost:3000/' +
+                res.redirect(ADDRESS +
                     querystring.stringify({
                         access_token: access_token,
                         refresh_token: refresh_token
                     }));
             } else {
-                res.redirect('localhost:3000/' +
+                res.redirect(ADDRESS +
                     querystring.stringify({
                         error: 'invalid_token'
                     }));
