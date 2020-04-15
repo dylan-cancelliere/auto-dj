@@ -28,7 +28,7 @@ app.get('/login', function(req,res){
     res.cookie(stateKey, state);
 
     //Request auth
-    let scope = 'user-read-private user-read-email';
+    let scope = 'user-read-private user-read-email streaming';
     res.redirect('https://accounts.spotify.com/authorize?' +
         querystring.stringify({
             response_type: 'code',
@@ -49,7 +49,7 @@ app.get('/callback', function(req, res) {
     let storedState = req.cookies ? req.cookies[stateKey] : null;
 
     if (state === null || state !== storedState) {
-        res.redirect('/#' +
+        res.redirect('localhost:3000/' +
             querystring.stringify({
                 error: 'state_mismatch'
             }));
@@ -86,13 +86,13 @@ app.get('/callback', function(req, res) {
                 });
 
                 // we can also pass the token to the browser to make requests from there
-                res.redirect('/#' +
+                res.redirect('localhost:3000/' +
                     querystring.stringify({
                         access_token: access_token,
                         refresh_token: refresh_token
                     }));
             } else {
-                res.redirect('/#' +
+                res.redirect('localhost:3000/' +
                     querystring.stringify({
                         error: 'invalid_token'
                     }));
