@@ -9,4 +9,4 @@ If you want to run AutoDJ on your machine, the following steps should get you up
 
 That's it!  You should be able to click the **Login with Spotify** button to get authenticated, and then you're good to go!
 
-Feel free to contact me @dylan-cancelliere if you have any questions, or open an issue/pr if you want to help out.
+Feel free to contact me [@dylan-cancelliere](https://github.com/dylan-cancelliere) if you have any questions, or open an issue/pr if you want to help out.
